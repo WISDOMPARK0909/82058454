@@ -14,6 +14,6 @@ public class TodoController {
 
     @GetMapping("/api/v1/user")
     public String getUserId(@RequestParam String userId) {
-        return "UserId: " + userId;
+        return "user";
     }
 }
