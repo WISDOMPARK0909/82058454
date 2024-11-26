@@ -14,8 +14,8 @@ public class TodoController {
     }
 
     @GetMapping("/api/v1/user")
-    public String getUserView(@RequestParam(value = "userId", required = false, defaultValue = "82058454") String id, Model model) {
-    model.addAttribute("userId", id);
+    public String getUserView(@RequestParam(value = "id", required = false, defaultValue = "82058454") String id, Model model) {
+    model.addAttribute("id", id);
     return "user"; // Thymeleaf 템플릿 이름 (user.html)
 }
 }
