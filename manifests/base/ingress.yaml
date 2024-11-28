@@ -2,6 +2,7 @@ apiVersion: networking.k8s.io/v1
 kind: Ingress
 metadata:
   name: troubleshooting-ingress
+  namespace: "82058454"
 spec:
   ingressClassName: ingress-internal
   rules:
