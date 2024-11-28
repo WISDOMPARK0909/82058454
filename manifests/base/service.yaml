@@ -4,7 +4,8 @@ metadata:
     name: troubleshooting
     namespace: "82058454"
 spec:
-    ports:
+    ports:    
     - port: 8080 
     selector:
-        app: troubleshooting-dev
+        app: troubleshooting
+    type : LoadBalancer 
